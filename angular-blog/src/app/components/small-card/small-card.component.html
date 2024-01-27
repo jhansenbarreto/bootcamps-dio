@@ -1,0 +1,15 @@
+<div class="small-card_container">
+    <div class="small-card_image">
+        <img src="{{ imageURL }}" width="100px" />
+    </div>
+
+    <div class="small-card_information">
+        <div class="small-card_title">
+            <a [routerLink]="['content', id]">{{ title }}</a> #{{ id }}
+        </div>
+
+        <div class="small-card_description">
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</div>

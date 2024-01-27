@@ -1,0 +1,16 @@
+.footer_container {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 15px;    
+    text-align: center;
+    color: white;
+}
+
+.footer_container > p {
+    margin-top: 15px;
+}
+
+.footer_container > p > a {
+    color: white;
+}

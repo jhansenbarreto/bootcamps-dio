@@ -1,0 +1,19 @@
+<div class="cards_home">
+    <div class="cards_home_main">
+        <app-big-card 
+            id="{{ digimon.id }}"
+            title="{{ digimon.title }}"
+            imageURL="{{ digimon.imageURL }}"
+            description="{{ digimon.description }}">
+        </app-big-card>
+    </div>
+
+    <div class="cards_home_others">
+        <app-small-card *ngFor="let d of digimons"
+            id="{{ d.id }}"
+            title="{{ d.title }}"
+            imageURL="{{ d.imageURL }}"
+            description="{{ d.description }}">
+        </app-small-card>
+    </div>
+</div>

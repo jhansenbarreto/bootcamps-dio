@@ -1,0 +1,21 @@
+<div class="content_container">
+    <div class="content_image fade-in">
+        <img src="{{ imageURL }}" width="320px">
+    </div>
+
+    <div class="content_information fade-in">
+        <div class="content_title">
+            <p>
+                {{ title }} #{{ id }}
+            </p>
+
+            <a [routerLink]="['']" title="Fechar">X</a>
+        </div>
+
+        <hr />
+
+        <div class="content_description">
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</div>

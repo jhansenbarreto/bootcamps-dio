@@ -1,0 +1,8 @@
+.title_container {
+    color: white;
+}
+
+.title_container > h1 {
+    text-align: center;
+    font-size: 7rem;
+}
