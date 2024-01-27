@@ -1,0 +1,4 @@
+aws dynamodb query \
+    --table-name Music \
+    --key-condition-expression "Artist = :artist" \
+    --expression-attribute-values  '{":artist":{"S":"Iron Maiden"}}'

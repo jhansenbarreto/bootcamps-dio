@@ -1,0 +1,5 @@
+aws dynamodb query \
+    --table-name Music \
+    --index-name ArtistAlbumTitle-index \
+    --key-condition-expression "Artist = :v_artist and AlbumTitle = :v_title" \
+    --expression-attribute-values  '{":v_artist":{"S":"Iron Maiden"},":v_title":{"S":"Fear of the Dark"} }'

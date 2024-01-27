@@ -1,0 +1,2 @@
+aws dynamodb batch-write-item \
+    --request-items file://json/batchmusic.json
