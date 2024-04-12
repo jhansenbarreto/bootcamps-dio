@@ -11,7 +11,7 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
 |:--:|:--:|:--:|:--:|:--:|
 | Banco PAN <br/> Java Developer | TQI Kotlin <br/> Backend Developer | Santander 2023 <br/> FullStack Java + Angular | Desenvolvimento <br/> Frontend com Angular <br/> (Banco PAN)| Java AI <br/> Powered |
 
-## Projetos
+## :open_file_folder: Projetos
 - **``Abstraindo um Bootcamp Usando Orientação a Objetos em Java:``**
   - *Desafio POO, utilizando: Abstração, Encapsulamento, Herança e Polimorfismo. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/desafio-poo>aqui</a>.*
 - **``Boas práticas com DynamoDB:``**
@@ -30,3 +30,5 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - >*Deploy do projeto na Vercel. Teste a aplicação clicando <a href=https://bootcamps-dio-digivice.vercel.app/>aqui</a>.*
 - **``Criando um Clone do BuzzFeed com Angular:``**
   - *Quiz inspirado na página do BuzzFeed, veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/project-quiz>aqui</a>.*
+- **``Redução dos Custos em Farmácias com AWS:``**
+  - *Exemplo de relatório de implantação de ferramentas em uma empresa. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/farmacias-aws>aqui</a>.*
