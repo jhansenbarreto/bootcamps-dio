@@ -32,3 +32,5 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - *Quiz inspirado na página do BuzzFeed, veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/project-quiz>aqui</a>.*
 - **``Redução dos Custos em Farmácias com AWS:``**
   - *Exemplo de relatório de implantação de ferramentas em uma empresa. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/farmacias-aws>aqui</a>.*
+- **``Desenvolvendo um Sistema para Eleição Usando Quarkus Framework:``**
+  - *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
