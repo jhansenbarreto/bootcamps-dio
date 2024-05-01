@@ -37,5 +37,7 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - *Exemplo de relatório de implantação de ferramentas em uma empresa. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/farmacias-aws>aqui</a>.*
 - **``Orientação a Objetos e UML: Diagramação de Classes do iPhone:``**
   - *Modelagem UML utilizando como base o vídeo de lançamento do iPhone. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/desafio-iPhone>aqui</a>.*
+- **``Criando Um Pequeno Sistema Para Validação de Processo Seletivo:``**
+  - *Demonstração simples de controle de fluxo. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/controle-fluxo>aqui</a>.*
 - **``Desenvolvendo um Sistema para Eleição Usando Quarkus Framework:``**
-  - *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
+  - :warning: *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
