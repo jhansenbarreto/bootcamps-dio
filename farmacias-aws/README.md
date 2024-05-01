@@ -31,7 +31,7 @@ Recomenda-se a continuidade da utilização das ferramentas implementadas e a bu
 </br></br>
 
 <p align="center">
-  <img width="200px" src="https://github.com/jhansenbarreto/edit-readme/assets/13790608/f8424101-22c4-4d2b-ac00-6f56e5863e52"></br>
+  <img width="200px" src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/3c2f0953-02e5-4bad-b729-1237ba83c41a"></br>
   <b>Nome do Responsável</b></br>
   <i>Assinatura do Responsável pelo Projeto</i>
 </p>
