@@ -1,7 +1,7 @@
 <p align="center">
   <img width="200px" src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/a6abfa60-b98a-46c6-8f21-7d3e121bf098">
 </p>
-<h1 align=center>Abstraindo um Bootcamp (Desafio POO)</h1>
+<h1 align=center>Abstraindo um Bootcamp</br>Usando Orientação a Objetos em Java</h1>
 
 >Desmistifique a Programação Orientada a Objetos (POO) com Java e pratique esse conceito fundamental nesse desafio. Para isso, os pilares da OO são devidamente formalizados: Abstração, Encapsulamento, Herança e Polimorfismo. Com isso, você poderá desenvolver sua capacidade de abstração com um problema real e implementar as evoluções que achar interessantes :wink:
 
