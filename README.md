@@ -5,11 +5,14 @@
 
 > :construction: *Documentação em construção...* :construction:
 
-Repositório criado para armazenar os projetos desenvolvidos nos <a href=https://www.dio.me/bootcamp>bootcamps</a> ofertados pela <a href=https://www.dio.me/>DIO</a> (Digital Innovation One).<br/>Os projetos desse repositório são referentes aos seguintes bootcamps:
+Repositório criado para armazenar os projetos desenvolvidos nos <a href=https://www.dio.me/bootcamp>bootcamps</a> ofertados pela <a href=https://www.dio.me/>Digital Innovation One</a> (DIO). Os projetos desse repositório são referentes aos bootcamps da tabela abaixo.
 
-| <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/a27f1887-bfb2-4f53-9856-c2386c39a373"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/45d62d98-f080-411b-b29d-2071e3487c9f"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/ee9741f7-7e04-45ee-a9eb-0a82e056083d"> <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/d5e8cbf5-282b-452d-ab55-9ae4ca432e7a"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/0b2b3655-a40d-4e65-82b2-5439e7aeca11"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/689b820f-8690-47c5-9e63-6ee311f52ed9"> |
-|:--:|:--:|:--:|:--:|:--:|
-| Banco PAN <br/> Java Developer | TQI Kotlin <br/> Backend Developer | Santander 2023 <br/> FullStack Java + Angular | Desenvolvimento <br/> Frontend com Angular <br/> (Banco PAN)| Java AI <br/> Powered |
+|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|:----------------:|:----------------:|:----------------:|
+| <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/a27f1887-bfb2-4f53-9856-c2386c39a373"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/45d62d98-f080-411b-b29d-2071e3487c9f"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/ee9741f7-7e04-45ee-a9eb-0a82e056083d"> <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/d5e8cbf5-282b-452d-ab55-9ae4ca432e7a"> |
+| Banco PAN <br/> Java Developer | TQI Kotlin <br/> Backend Developer | Santander 2023<br/>FullStack Java+Angular |
+| <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/0b2b3655-a40d-4e65-82b2-5439e7aeca11"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/689b820f-8690-47c5-9e63-6ee311f52ed9"> | <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/5889e8b5-2be9-4859-8c12-3ef0f155bcaa"> <img src="https://github.com/jhansenbarreto/bootcamps-dio/assets/13790608/6449ba3d-5d85-4e59-bcba-4e90688e705b"> |
+| Desenvolvimento <br/> Frontend com Angular <br/> (Banco PAN)| Java AI <br/> Powered | Santander 2024<br/>Backend com Java |
 
 ## :open_file_folder: Projetos
 - **``Abstraindo um Bootcamp Usando Orientação a Objetos em Java:``**
@@ -32,5 +35,7 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - *Quiz inspirado na página do BuzzFeed, veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/project-quiz>aqui</a>.*
 - **``Redução dos Custos em Farmácias com AWS:``**
   - *Exemplo de relatório de implantação de ferramentas em uma empresa. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/farmacias-aws>aqui</a>.*
+- **``Orientação a Objetos e UML: Diagramação de Classes do iPhone:``**
+  - *Modelagem UML utilizando como base o vídeo de lançamento do iPhone. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/desafio-iPhone>aqui</a>.*
 - **``Desenvolvendo um Sistema para Eleição Usando Quarkus Framework:``**
   - *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
