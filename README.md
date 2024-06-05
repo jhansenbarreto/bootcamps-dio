@@ -40,6 +40,6 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
 - **``Criando Um Pequeno Sistema Para Validação de Processo Seletivo:``**
   - *Demonstração simples de controle de fluxo. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/controle-fluxo>aqui</a>.*
 - **``Simulando Uma Conta Bancária Através do Terminal/Console``</br>& ``Criando um Banco Digital com Java e Orientação a Objetos:``**
-  - *Funcionalidades principais de contas bancárias, com usuário interagindo pelo terminal. Diretório do projeto <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/banco-console>aqui</a>. Dois projetos em um.*
+  - *Funcionalidades principais de contas bancárias, com usuário interagindo pelo terminal.</br>Diretório do projeto <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/banco-console>aqui</a>. Dois projetos em um.*
 - **``Desenvolvendo um Sistema para Eleição Usando Quarkus Framework:``**
   - :warning: *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
