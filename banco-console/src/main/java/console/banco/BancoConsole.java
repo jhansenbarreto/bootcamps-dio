@@ -2,6 +2,8 @@ package console.banco;
 
 import console.banco.model.Cliente;
 import console.banco.model.Conta;
+import console.banco.model.ContaCorrente;
+import console.banco.model.ContaPoupanca;
 import console.banco.utils.CorConsole;
 
 import java.io.IOException;
@@ -26,9 +28,10 @@ public class BancoConsole {
     private static final String FUNDO_LETRA_ENTRADA = CorConsole.LETRA_VERDE + CorConsole.BACKGROUND_BRANCO;
     private static final String FUNDO_LETRA_SAIDA = CorConsole.LETRA_VERMELHA + CorConsole.BACKGROUND_BRANCO;
 
-    //Exemplo simples, aceita apenas letras maiúsculas e minúsculas sem acento e sem cedilha
+    //Exemplo simples, aceita apenas espaço, letras maiúsculas e minúsculas sem acento e sem cedilha
     private static final String REGEX_NOME = "([a-zA-Z ]+)+";
-    //Aceita apenas um grupo de 11 algarismos
+    
+//Aceita apenas um grupo de 11 algarismos
     private static final String REGEX_CPF = "[0-9]{11}";
 
     public static void main(String[] args) {
@@ -100,19 +103,28 @@ public class BancoConsole {
     }
 
     //OPÇÃO 1
-    private static void abrirConta(Scanner scan, PrintStream out, List contas) {
+    private static void abrirConta(Scanner scan, PrintStream out, List<Conta> contas) {
         limparConsole();
 
         out.println(FUNDO_LETRA_PADRAO + "\n # ABRIR CONTA: " + CorConsole.RESET);
         out.println(FUNDO_LETRA_PADRAO + " Seja bem-vindo(a)! " + CorConsole.RESET);
 
+        boolean contaCorrente = isContaCorrente(scan, out, "-1");
         String nome = getNomeCliente(scan, out, "-1");
         String cpf = getCpfCliente(scan, out, "-1");
         String senha = getSenhaConta(scan, out, "-1");
 
-        Conta conta = new Conta(new Cliente(nome, cpf), senha);
-        contas.add(conta);
+        if (contaCorrente) {
+            var corrente = new ContaCorrente(new Cliente(nome, cpf), senha);
+            corrente.start();
+            contas.add(corrente);
+        } else {
+            var poupanca = new ContaPoupanca(new Cliente(nome, cpf), senha);
+            poupanca.start();
+            contas.add(poupanca);
+        }
 
+        Conta conta = contas.get(contas.size() - 1);
         System.out.println(
                 String.format(
                         "\n%s CONTA CRIADA!\n Obrigado pela preferência, %s %s",
@@ -129,6 +141,29 @@ public class BancoConsole {
         );
 
         voltarAoMenu(scan, out);
+    }
+
+    private static boolean isContaCorrente(Scanner scan, PrintStream out, String tipoConta) {
+        while (tipoConta.equals("-1")) {
+            out.print(FUNDO_LETRA_PADRAO + "\n 1 - CONTA CORRENTE (CC)" + CorConsole.RESET);
+            out.print(FUNDO_LETRA_PADRAO + "\n 2 - CONTA POUPANÇA (CP)" + CorConsole.RESET);
+            out.print(FUNDO_LETRA_PADRAO + "\n Digite o número do tipo de conta desejada:" + CorConsole.RESET);
+            tipoConta = scan.nextLine();
+
+            if ((!tipoConta.equals("1")) && (!tipoConta.equals("2"))) {
+                out.println(FUNDO_LETRA_ERRO + " ERRO: Digite uma opção válida. " + CorConsole.RESET);
+                out.println(FUNDO_LETRA_ATENCAO + " Apenas 1 ou 2 " + CorConsole.RESET);
+                tipoConta = "-1";
+            }
+        }
+
+        if (tipoConta.equals("1")) {
+            out.print(FUNDO_LETRA_PADRAO + "\n Você escolheu: CONTA CORRENTE (CC) \n" + CorConsole.RESET);
+            return true;
+        } else {
+            out.print(FUNDO_LETRA_PADRAO + "\n Você escolheu: CONTA POUPANÇA (CP) \n" + CorConsole.RESET);
+            return false;
+        }
     }
 
     private static String getNomeCliente(Scanner scan, PrintStream out, String nome) {
@@ -214,9 +249,9 @@ public class BancoConsole {
         if (!optConta.isEmpty()) {
             out.println(FUNDO_LETRA_SUCESSO + "\n CONTA ENCONTRADA! " + CorConsole.RESET);
             out.println(
-                    String.format("%s Titular: %s %s",
+                    String.format("%s %s %s",
                             FUNDO_LETRA_PADRAO,
-                            optConta.get().getTitular(),
+                            optConta.get(),
                             CorConsole.RESET)
             );
             return optConta.get();
@@ -252,9 +287,13 @@ public class BancoConsole {
             try {
                 //não usei nextDouble para evitar o erro de quebra de linha
                 valor = Double.parseDouble(scan.nextLine());
-                conta.deposito(conta, valor);
-                out.println(FUNDO_LETRA_SUCESSO + "\n MOVIMENTAÇÃO BANCÁRIA EFETUADA! " + CorConsole.RESET);
 
+                if (valor > 0) {
+                    conta.deposito(conta, valor, "DEPÓSITO");
+                    out.println(FUNDO_LETRA_SUCESSO + "\n MOVIMENTAÇÃO BANCÁRIA EFETUADA! " + CorConsole.RESET);
+                } else {
+                    throw new NumberFormatException("VALOR ABAIXO DO PERMITIDO.");
+                }
             } catch (NumberFormatException ex) {
                 out.println(FUNDO_LETRA_ERRO + " ERRO: digite uma quantia válida. " + CorConsole.RESET);
                 out.println(FUNDO_LETRA_ATENCAO + " Informe um número positivo inteiro ou real separando os centavos por ponto (.) " + CorConsole.RESET);
@@ -281,13 +320,14 @@ public class BancoConsole {
 
     public static boolean verificaSaldo(Scanner scan, PrintStream out, Conta conta) {
         mostrarSaldo(out, conta);
-        if (conta.getSaldo() == 0) {
-            out.println(FUNDO_LETRA_ATENCAO + " Seu saldo está zerado. " + CorConsole.RESET);
+        if (conta.getSaldo() <= 0) {
+            out.println(FUNDO_LETRA_ATENCAO + " Saldo insuficiente. " + CorConsole.RESET);
             return false;
         }
         return true;
     }
-
+    
+    //OPÇÃO 5
     private static void fazerTransferencia(Scanner scan, PrintStream out, List contas) {
         limparConsole();
 
@@ -314,9 +354,9 @@ public class BancoConsole {
                 valor = Double.parseDouble(scan.nextLine());
 
                 if (destino == null) {
-                    origem.saque(origem, valor); //Se destino == null é um saque
+                    origem.saque(origem, valor, "SAQUE"); //Se destino == null é um saque
                 } else {
-                    origem.transferencia(origem, destino, valor); //Senão é transferência
+                    origem.transferencia(origem, destino, valor, "TRANSFERÊNCIA"); //Senão é transferência
                 }
                 out.println(FUNDO_LETRA_SUCESSO + "\n MOVIMENTAÇÃO BANCÁRIA EFETUADA! " + CorConsole.RESET);
 
@@ -346,9 +386,9 @@ public class BancoConsole {
 
             out.println(
                     String.format(
-                            "%s Titular: %s \n Saldo: R$ %.2f %s",
+                            "%s %s \n Saldo: R$ %.2f %s",
                             FUNDO_LETRA_PADRAO,
-                            conta.getTitular(),
+                            conta,
                             conta.getSaldo(),
                             CorConsole.RESET));
 

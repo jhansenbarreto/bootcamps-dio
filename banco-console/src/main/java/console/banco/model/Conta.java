@@ -11,7 +11,7 @@ import lombok.Setter;
  * @author Jhansen Barreto
  */
 @Getter
-public class Conta implements Operacao {
+public abstract class Conta extends Thread implements Operacao {
 
     @Setter
     private Double saldo;
@@ -28,8 +28,13 @@ public class Conta implements Operacao {
         this.extrato = new ArrayList<>();
     }
 
-    public void salvarMovimentacao(double valor, boolean isEntrada) {
-        this.extrato.add(new Movimentacao(valor, isEntrada));
+    public void salvarMovimentacao(double valor, boolean isEntrada, String operacao) {
+        this.extrato.add(new Movimentacao(valor, isEntrada, operacao));
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s | %s ", numero, titular);
     }
 
     public class Movimentacao {
@@ -38,16 +43,18 @@ public class Conta implements Operacao {
         private final boolean entrada;
         private final double valor;
         private final String data;
+        private final String operacao;
 
-        public Movimentacao(double valor, boolean entrada) {
+        public Movimentacao(double valor, boolean entrada, String operacao) {
             this.valor = valor;
             this.entrada = entrada;
             this.data = Calendar.getInstance().getTime().toString();
+            this.operacao = operacao;
         }
 
         @Override
         public String toString() {
-            return String.format("\n > %s \n\t %s no valor de R$ %.2f ", data, (entrada ? "ENTRADA" : "SAÍDA"), valor);
+            return String.format("\n > %s \n\t %s no valor de R$ %.2f ", data, operacao, valor);
         }
     }
 }
