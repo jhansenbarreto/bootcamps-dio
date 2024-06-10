@@ -1,8 +1,18 @@
 .title_container {
-    color: white;
+    text-align: center;
 }
 
 .title_container > h1 {
-    text-align: center;
     font-size: 7rem;
+    background: linear-gradient(to left, violet, purple, indigo, blue, green, yellow, orange, red, violet);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 28rem;
+    }
 }
