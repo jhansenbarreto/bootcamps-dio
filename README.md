@@ -43,3 +43,5 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - *Funcionalidades principais de contas bancárias, com usuário interagindo pelo terminal.</br>Diretório do projeto <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/banco-console>aqui</a>. Dois projetos em um.*
 - **``Desenvolvendo um Sistema para Eleição Usando Quarkus Framework:``**
   - :warning: *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
+- **``Recriando a Interface da PlayStation Store com Angular:``**
+  - *Página simples, criada utilizando o framework Angular, inspirada na página da PlayStation Store. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/virtual-store>aqui</a>.*
