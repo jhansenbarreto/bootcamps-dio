@@ -1,0 +1,16 @@
+.card-label_container {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+
+}
+
+.card-label_content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Jost';
+    padding: 5px 15px;
+}
