@@ -45,3 +45,5 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - :warning: *Projeto ainda em desenvolvimento!* :warning: *Diretório do projeto: <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/eleicao-quarkus>aqui</a>.*
 - **``Recriando a Interface da PlayStation Store com Angular:``**
   - *Página simples, criada utilizando o framework Angular, inspirada na página da PlayStation Store. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/virtual-store>aqui</a>.*
+- **``Criando um Container de uma Aplicação WEB:``**
+  - *Uma aplicação PHP simples rodando em um container docker. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/projeto-docker>aqui</a>.*
