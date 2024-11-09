@@ -1,0 +1,148 @@
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+}
+
+body {
+    color: #336317;
+    font-family: Courier New, monospace;
+    font-weight: bold;
+    background: url(../img/backlogin.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
+
+#cabecalho{
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(40,163,7,0) 0%,rgba(40,163,7,0.8) 20%,rgba(40,163,7,1) 53%,rgba(40,163,7,0.8) 79%,rgba(40,163,7,0) 100%); 
+    background: linear-gradient(left, rgba(40,163,7,0) 0%,rgba(40,163,7,0.8) 20%,rgba(40,163,7,1) 53%,rgba(40,163,7,0.8) 79%,rgba(40,163,7,0) 100%); 
+}
+
+h3{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+p{
+    margin-bottom:15px;
+}
+p:first-child{
+    margin: 0px;
+}
+label{
+    position: relative;
+}
+
+::-webkit-input-placeholder  {
+    color: #BEBCBC; 
+    font-style: italic;
+    font-size: 15px;
+}
+
+input, button {
+    outline: none;
+    width: 94%;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #B2B2B2;
+
+    font-size: 15px;
+    font-family: Courier New, monospace;
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+button[type="submit"]{
+    width: 100% !important;
+    cursor: pointer;
+    background: #336317;
+    padding: 8px 5px;
+    color: #FFF;
+    font-size: 20px;
+    border: 1px solid #FFF;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px #333;
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    transition: all 0.2s linear;
+}
+button[type="submit"]:hover{
+    background: #54A326;
+}
+
+button[type="submit"] span {
+    position: absolute;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+
+#login {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top:50%;
+
+    margin-left:-200px; /* Metade do valor da Largura */
+    margin-top:-200px; /* Metade da valor da Altura */
+    position:absolute;
+
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.8);
+
+    -webkit-box-shadow: 5px;
+    border-radius: 5px;
+
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#form {
+    padding: 20px;
+    margin: 0px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+}

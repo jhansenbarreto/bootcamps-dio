@@ -1,0 +1,87 @@
+.th-table {
+    padding: 7px;
+    background-color: #336317;
+    color: white;
+}
+
+.td-table {
+    padding: 5px;
+    font-size: 11pt;
+    background-color: rgba(123, 240, 55, .7);
+    text-align: center;
+}
+
+.th-table2 {
+    padding: 7px;
+    background-color: #8B0000;
+    color: white;
+}
+
+.td-table2 {
+    padding: 5px;
+    font-size: 11pt;
+    background-color: rgba(238, 106, 80, .7);
+    text-align: center;
+}
+
+.th-table3 {
+    padding: 7px;
+    background-color: #EEEE00;
+}
+
+.td-table3 {
+    padding: 5px;
+    font-size: 11pt;
+    background-color: rgba(255, 251, 143, .7);
+    text-align: center;
+}
+
+#table_paginate a{
+    font-size: 10pt;
+    font-family: monospace;
+    color: #336317;
+    padding-right: 10px;
+}
+
+#table_paginate a:hover {
+    cursor: pointer;
+    color: #54A326;
+    font-size: 11pt;
+    text-decoration: underline;
+}
+
+#table2_paginate a{
+    font-size: 10pt;
+    font-family: monospace;
+    color: #8B0000;
+    padding-right: 10px;
+}
+
+#table2_paginate a:hover {
+    cursor: pointer;
+    color: #EE6A50;
+    font-size: 11pt;
+    text-decoration: underline;
+}
+
+#table3_paginate a{
+    font-size: 10pt;
+    font-family: monospace;
+    color: #DAA520;
+    padding-right: 10px;
+}
+
+#table3_paginate a:hover {
+    cursor: pointer;
+    color: #FFFB8F;
+    font-size: 11pt;
+    text-decoration: underline;
+}
+
+#tbl {
+    width: 100%;
+}
+
+#tbl td {
+    vertical-align: top;
+}
