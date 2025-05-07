@@ -27,7 +27,7 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
 |<img width="250" src="https://github.com/user-attachments/assets/60bb99b7-0c05-4c62-89dc-aaeb83c4542b">|<img width="250" src="https://github.com/user-attachments/assets/e454733f-5726-4c8d-b43b-31e4f44ac1d4">|<img width="250" src="https://github.com/user-attachments/assets/6f246f54-d664-4aed-b0b8-49c17935a344">|
 |<img width="250" src="https://github.com/user-attachments/assets/bb97d599-eee2-476e-9302-019d8102bae1">|<img width="250" src="https://github.com/user-attachments/assets/40ecdc10-2311-437a-aa8f-be33cb904f15">|<img width="250" src="https://github.com/user-attachments/assets/019a0ee0-009c-446e-ad50-e23874a59c1c">|
 |<img width="250" src="https://github.com/user-attachments/assets/a90b733a-44fd-4cfc-afab-9fc3c055cb31">|<img width="250" src="https://github.com/user-attachments/assets/e1270279-c9e9-462e-9b2a-1a8f3863f4c1">|<img width="250" src="https://github.com/user-attachments/assets/f12cd72d-5c4b-4860-95a7-e5db3a7d2df7">|
-|<img width="250" src="https://github.com/user-attachments/assets/ee6a5fd4-f77e-4663-b69a-3f80f1da84c1">|||
+|<img width="250" src="https://github.com/user-attachments/assets/ee6a5fd4-f77e-4663-b69a-3f80f1da84c1">|<img width="250" src="https://github.com/user-attachments/assets/9f67598f-768b-4007-86af-ab138462c178">||
 
 ## :open_file_folder: Projetos
 - **``Abstraindo um Bootcamp Usando Orientação a Objetos em Java:``**
@@ -62,3 +62,13 @@ Repositório criado para armazenar os projetos desenvolvidos nos <a href=https:/
   - *Página simples, criada utilizando o framework Angular, inspirada na página da PlayStation Store. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/virtual-store>aqui</a>.*
 - **``Criando um Container de uma Aplicação WEB:``**
   - *Uma aplicação PHP simples rodando em um container docker. Veja o projeto clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/projeto-docker>aqui</a>.*
+- **``Resumos de Laboratoórios DIO (Desafios de Projeto listados abaixo):``**
+  - *Acesse o README clicando <a href=https://github.com/jhansenbarreto/bootcamps-dio/tree/master/resumos-labs>aqui</a>.*
+    - *Microsoft Azure - Localizando Serviços por Categoria*
+    - *Criando Máquinas Virtuais na Azure*
+    - *Configurando uma Instância de Banco de Dados na Azure*
+    - *Construindo Arquiteturas no Azure*
+    - *Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure*
+    - *Análise de Sentimentos com Language Studio no Azure AI*
+    - *Azure Cognitive Search: Utilizando AI Search para indexação e consulta de Dados*
+    - *Explorando os Recursos de IA Generativa com Copilot e OpenAI*
